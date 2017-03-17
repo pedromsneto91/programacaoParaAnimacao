@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<title>Escudo Cap América</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<canvas id="Escudo Capitão América" width="800" height="800"></canvas>
+
+		<!--Círculo Maior-->
+		<script>
+			var canvas = document.getElementById("Escudo Capitão América");
+			var escudo = canvas.getContext('2d');
+
+			escudo.lineWidth = 15;
+			escudo.strokeStyle = 'rgb(204,0,0)';
+			escudo.beginPath();
+				escudo.arc(150,150,120,0* Math.PI, 2 * Math.PI,false);
+				escudo.stroke();
+			escudo.closePath();
+		</script>
+
+		<!--Círculo Maior-->
+		<script>
+			var escudo2 = canvas.getContext('2d');
+
+			escudo2.lineWidth = 15;
+			escudo2.strokeStyle = 'rgb(204,0,0)';
+			escudo2.fillStyle = 'rgb(50,31,222)';
+			escudo2.beginPath();
+				escudo2.arc(150,150,80,0* Math.PI, 2 * Math.PI,false);
+				escudo2.fill();
+				escudo2.stroke();
+			escudo2.closePath();
+		</script>
+
+		<!--Estrela-->
+		<script>
+			var estrela = canvas.getContext('2d');
+
+			estrela.lineWidth = 2;
+			estrela.strokeStyle = 'rgb(255,255,255)';
+			estrela.fillStyle = 'rgb(255,255,255)';
+			estrela.beginPath();
+				estrela.moveTo(147,79);
+				estrela.lineTo(166,126);
+				estrela.lineTo(216,126);
+				estrela.lineTo(176,160);
+				estrela.lineTo(195,203);
+				estrela.lineTo(147,180);
+				estrela.lineTo(104,203);
+				estrela.lineTo(122,160);
+				estrela.lineTo(83.5,126);
+				estrela.lineTo(131,126);
+				estrela.lineTo(147,79);
+				estrela.fill();
+				estrela.stroke();
+			estrela.closePath();
+		</script>
+
+	</body>
+</html>

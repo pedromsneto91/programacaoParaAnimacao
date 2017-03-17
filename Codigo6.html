@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>Código 6</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<canvas id="codigo6" width="500" height="500"></canvas>
+
+	<script>
+	var canvas = document.getElementById('codigo6');
+	var bezier = canvas.getContext('2d');
+
+	bezier.lineWidth = 20;
+	bezier.beginPath();
+		bezier.moveTo(5,50);
+		bezier.bezierCurveTo(30,30,130,530,200,100);
+		bezier.stroke();
+	bezier.closePath();
+	</script>
+</body>
+</html>

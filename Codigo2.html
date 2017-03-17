@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<title>Canvas API</title>
+		<meta charset="utf-8">
+</head>
+	<body>
+		<canvas id="generico" width="500" height="500"></canvas>
+		<script>
+			//contexto
+			var canvas = document.getElementById("generico");
+			var contexto = canvas.getContext('2d');
+			//desenho de um retangulo
+			contexto.fillRect(5,5,145,145);//parametros: x,y,width,height
+			contexto.fillStyle = "rgb(0,162,232)";
+			contexto.fillRect(40,55,145,145);
+			contexto.fillStyle = "rgba(255,0,0,0.2)";
+			contexto.fillRect(75,95,145,145);
+		</script>
+	</body>
+</html> 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<title>Exercicio 4</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<canvas id="quadradosEmLoop" width="1000" height="1000"></canvas>
+		<script>
+			
+			var canvas = document.getElementById("quadradosEmLoop");
+        	var quadLoop = canvas.getContext('2d');
+        	var iteracao1 = 15;
+
+        	for(var i = 1; i <= 7; i++){
+        		quadLoop.fillRect((iteracao1+10)*i,(iteracao1 + 30)*i,50,50);
+        	}
+        	for(var i = 7; i <= 13	; i++){
+        		quadLoop.fillRect((iteracao1 + 10)*	i, 315-(45*(i-7)),50,50);
+        	}
+		</script>
+	</body>
+</html>

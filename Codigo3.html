@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<title>Canvas API</title>
+		<meta charset="utf-8">
+</head>
+	<body>
+		<canvas id="generico" width="500" height="500"></canvas>
+		<script>
+			//contexto
+			var canvas = document.getElementById("generico");
+			var contexto = canvas.getContext('2d');
+			
+			//desenho de um triangulo invertido com preenchimento
+			contexto.fillStyle = '#264761';
+			contexto.strokeline = '#9233A7';
+			contexto.lineWidth = 4;
+
+			contexto.beginPath();
+				contexto.moveTo(10,10);
+				contexto.lineTo(100,100);
+				contexto.lineTo(200,10);
+				contexto.lineTo(9,10);
+				contexto.fill();
+				contexto.stroke();
+			contexto.closePath();
+		</script>
+	</body>
+</html> 

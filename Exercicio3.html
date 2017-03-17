@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>Exercicio 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<canvas id="exercicio3" width="500" height="500"></canvas>
+
+	<!--Cabeça-->
+	<script>	
+	var canvas = document.getElementById('exercicio3');
+	var carinha = canvas.getContext('2d');
+
+	carinha.lineWidth = 20;
+	carinha.fillStyle = '#808080';
+
+	carinha.beginPath();
+		carinha.arc(150,200,140,0,2.5 * Math.PI, false);
+		carinha.fill();
+		carinha.stroke();
+	carinha.closePath();
+	</script>
+
+	<!--Olhos-->
+	<script>
+		var olhos = canvas.getContext('2d');
+
+		olhos.beginPath();
+			olhos.moveTo(120,110);
+			olhos.lineTo(110,180);
+			olhos.moveTo(170,110);
+			olhos.lineTo(180,180);
+			olhos.stroke();
+		olhos.closePath();
+	</script>
+
+	<!--Boca1-->
+	<script>
+		var boca1 = canvas.getContext('2d');
+
+		boca1.beginPath();
+			boca1.bezierCurveTo(60,200,140,330,245,200);
+			boca1.stroke();
+		boca1.closePath();
+	</script>
+
+	<script>
+		var boca2 = canvas.getContext('2d');
+
+		boca2.beginPath();
+			boca2.bezierCurveTo(60,200,140,430,245,200);
+			boca2.stroke();
+		boca2.closePath();
+	</script>
+
+</body>
+</html>

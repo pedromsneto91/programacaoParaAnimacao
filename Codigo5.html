@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<title>Canvas API</title>
+		<meta charset="utf-8">
+</head>
+	<body>
+		<canvas id="generico" width="500" height="500"></canvas>
+		<script>
+			//contexto
+			var canvas = document.getElementById("generico");
+			var contexto = canvas.getContext('2d');
+			//desenho de um arco de circulo preto
+			contexto.beginPath();
+				contexto.fillStyle = "rgb(0,0,0)";
+				contexto.arc(123,93,70,0, 1.5 * Math.PI, false);
+				contexto.stroke();
+				contexto.closePath();
+		</script>
+	</body>
+</html> 

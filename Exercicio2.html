@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>Desenho</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<canvas id="exercicios" width="500" height="500"></canvas>
+
+	<!--Cabeça-->
+	<script>
+		var canvas = document.getElementById("exercicios");
+		var contexto = canvas.getContext('2d');
+
+		contexto.lineWidth = 4;
+		contexto.strokeStyle = "rgb(255,165,0)";
+		
+		contexto.beginPath();
+			contexto.arc(80,80,50,0.5 * Math.PI, 2.5 * Math.PI, false);
+			contexto.stroke();
+		contexto.closePath();
+	</script>
+
+	<!--Olho1-->
+	<script>
+		var contexto2 = canvas.getContext('2d');
+
+		contexto2.beginPath();
+			contexto.arc(65,65,5, 0 ,2 * Math.PI,false);
+		contexto2.closePath();
+		contexto2.stroke();
+	</script>
+
+	<!--Olho2-->
+	<script>
+		var contexto3 = canvas.getContext('2d');
+
+		contexto3.beginPath();
+			contexto.arc(95,65,5, 0.5 * Math.PI, 2.5 * Math.PI,false);
+		contexto3.closePath();
+		contexto3.stroke();
+	</script>
+
+	<!--Sorriso-->
+	<script>
+		var contexto4 = canvas.getContext('2d');
+
+		contexto4.beginPath();
+			contexto.arc(80,85,30, 0 * Math.PI, 1 * Math.PI, false);
+			contexto4.stroke();
+		contexto4.closePath();
+	</script>
+
+	<!--Corpo-->
+	<script>
+		var contexto5 = canvas.getContext('2d');
+		
+		contexto.beginPath();
+			contexto5.moveTo(80,130);
+			contexto5.lineTo(80,270);
+		contexto.closePath();
+		contexto5.stroke();
+	</script>
+
+	<!--Braços-->
+	<script>
+		var contexto6 = canvas.getContext('2d');
+
+		contexto6.beginPath();
+			contexto6.moveTo(20,180);
+			contexto6.lineTo(140,180);
+		contexto6.closePath();
+		contexto6.stroke();
+	</script>
+
+	<!--Pernas-->
+	<script>
+		var contexto7 = canvas.getContext('2d');
+
+		contexto7.beginPath();
+			contexto7.moveTo(80,270);
+			contexto7.lineTo(20,340);
+			contexto7.moveTo(80,270);
+			contexto7.lineTo(140,340);
+		contexto7.closePath();
+		contexto7.stroke();
+	</script>
+
+</body>
+</html>
