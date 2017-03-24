@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>Código 9</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<canvas id="codigo9" width="800" height="800" style="border: 1px solid black;"></canvas>
+
+	<script>
+		var canvas = document.getElementById("codigo9");
+		var texto3 = canvas.getContext('2d');
+
+		texto3.shadowOffsetX = 4;
+		texto3.shadowOffsetY = 5;
+		texto3.shadowBlur = 6;
+		texto3.shadowColor = "black";
+
+		texto3.font = "40px Tahoma";
+		texto3.fillText("Texto 3", 30,40);
+	</script>
+</body>
+</html>
