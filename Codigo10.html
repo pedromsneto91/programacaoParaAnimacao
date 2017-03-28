@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>Código 10 - Imagem</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<canvas id="Código 10" width="1500" height="800" style="border: 1px solid black">
+	<!--Textos-->
+	<script>
+		var canvas = document.getElementById("Código 10");
+		var texto = canvas.getContext('2d');
+
+		texto.font = '20px Arial';
+		texto.fillText("Imagem padrão:",50,25);
+
+		texto.fillText("Imagem com largura 100x100:", 50,200);
+
+		//falta a imagem cortada. Não Consegui
+	</script>
+
+	<script>
+		//var canvas = document.getElementById("Código 10");
+		var context = canvas.getContext('2d');
+		var imagem = new Image();
+
+		imagem.src = "logo-estacio-horizontal.png";
+		
+		imagem.onload = function(){
+			context.drawImage(imagem, 50,50);
+			context.drawImage(imagem, 50,220,100,100);
+		}
+	</script>
+</body>
+</html>
